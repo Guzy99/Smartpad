@@ -1,0 +1,18 @@
+.imgro {
+    vertical-align: middle;
+    margin: 1em auto;
+    text-align:center;
+}
+.textat{
+    text-align:left;
+}
+.list-unstyled {
+    padding-left:0;
+    list-style:none
+}
+.list-inline {
+    padding-left:0;
+    margin-left:-5px;
+    list-style:none
+}
+

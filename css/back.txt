@@ -1,0 +1,21 @@
+<div class="card bup">
+                  <div class="card-header card-header-success">
+                    <h4 class="card-title">Добавление заказа</h4>
+                    <a href="#close" title="Закрыть" class="iw-close2">×</a>
+                  </div>
+                  <div class="card-body">
+                  <!-- onsubmit="bootClick();return false; -->
+                    <form action="soso.php" name="adder" method="post">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="bmd-label-floating">Введите айди вещи, которую вы хотите удалить</label>
+                            <input type="text" class="form-control" name="id_new">
+                          </div>
+                      <input type="submit" value="Удалить" class="btn btn-success pull-right">
+                      <!-- <button onclick="javascript:window.location='#iw-close';" class="btn btn-success pull-right">Добавить</button> -->
+                      <div class="clearfix"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>

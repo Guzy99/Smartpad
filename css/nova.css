@@ -1,0 +1,489 @@
+body.modal-open {
+    overflow: hidden;
+}
+.atxt{
+    color: rgb(255, 0, 0) !important;
+}
+.whiter{
+background: white !important;
+    color:  #4caf50 !important;
+    margin-left: 0em !important;
+}
+.colloricon{
+    color:  #4caf50 !important;
+}
+.c_pad{
+    max-width: 100% !important;;
+}
+.bup{
+    margin-top:0em !important;
+    margin-bottom:0px !important;
+}
+/*CSS-свойства для заднего фона*/
+.iw-modal {
+    opacity: 0; /*изначально этот блок должен быть прозрачным*/
+    background: rgba(0,0,0,0.7); /*задаём цвет фона*/
+    pointer-events: none; /*делаем чтобы по элементу нельзя было кликнуть когда он прозрачный*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all 0.5s ease;
+    margin: 0;
+    padding: 0;
+     overflow: hidden;
+}
+
+.iw-modal:target {
+    opacity: 1; /*при клике блок становится видимым*/
+    pointer-events: auto; /*теперь по блоку можно кликать мышкой*/
+    /* overflow-y: auto; прокрутка по вертикли страницы */
+    overflow: hidden;
+}
+
+.iw-modal-wrapper {
+    margin:auto; /*выравниваем модальное окно по центру по горизонтали*/
+    margin-top:25vh; /*отступ сверху можно задавать в px, % или vh*/
+}
+
+/*CSS-свойства для блока, содержащего контент модального окна */
+.iw-CSS-modal-inner {
+    position: relative;
+}
+
+/*CSS-свойства заголовка модального окна */
+.iw-modal-header {
+    padding: 15px;/*внутренний отступ*/
+    background:#f1f1f1;/*цвет фона*/
+    position:relative;
+}
+.iw-modal-title {
+    font-size: 18px; /*размер шрифта*/
+    color:#555; /*цвет шрифта*/
+    font-weight:bold; /*жирность шрифта*/
+    line-height: 1.5; /*высота строки*/
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*CSS для кнопки закрытия*/
+.iw-close {
+    position:absolute;
+    top:15px; /*отступ сверху*/
+    right:10px; /*отступ справа*/
+    font-size: 24px; /*размер шрифта*/
+    color: #f4fcff; /*цвет шрифта*/
+    text-decoration: none;
+}
+
+.iw-close:hover, .iw-close:focus {
+    color: #000; /*цвет шрифта при наведении*/
+    cursor: pointer;
+}
+
+/**MEDIA**/
+@media (min-width: 550px) {
+    .iw-modal-wrapper {
+        max-width: 700px;
+    }
+}
+.textat{
+    text-align: center !important;
+}
+.textlef{
+    text-align: left !important;
+}
+/*CSS-свойства для заднего фона*/
+.iw-modal2 {
+    opacity: 0; /*изначально этот блок должен быть прозрачным*/
+    background: rgba(0,0,0,0.7); /*задаём цвет фона*/
+    pointer-events: none; /*делаем чтобы по элементу нельзя было кликнуть когда он прозрачный*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.iw-modal2:target {
+    opacity: 1; /*при клике блок становится видимым*/
+    pointer-events: auto; /*теперь по блоку можно кликать мышкой*/
+    overflow-y: auto; /*прокрутка по вертикли страницы*/
+}
+
+.iw-modal-wrapper2 {
+    margin:auto; /*выравниваем модальное окно по центру по горизонтали*/
+    margin-top:25vh; /*отступ сверху можно задавать в px, % или vh*/
+}
+
+/*CSS-свойства для блока, содержащего контент модального окна */
+.iw-CSS-modal-inner2 {
+    position: relative;
+    background: #fff; /*цвет фона*/
+    border: 1px solid #ccc; /*цвет и толщина рамки*/
+    border-radius: 0px; /*радиус скругления углов*/
+
+}
+
+/*CSS-свойства заголовка модального окна */
+.iw-modal-header2 {
+    padding: 15px;/*внутренний отступ*/
+    background:#f1f1f1;/*цвет фона*/
+    position:relative;
+}
+.iw-modal-title2 {
+    font-size: 18px; /*размер шрифта*/
+    color:#555; /*цвет шрифта*/
+    font-weight:bold; /*жирность шрифта*/
+    line-height: 1.5; /*высота строки*/
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*CSS для кнопки закрытия*/
+.iw-close2 {
+    position:absolute;
+    top:15px; /*отступ сверху*/
+    right:10px; /*отступ справа*/
+    font-size: 24px; /*размер шрифта*/
+    color: #f4fcff; /*цвет шрифта*/
+    text-decoration: none;
+}
+
+.iw-close2:hover, .iw-close:focus {
+    color: #000; /*цвет шрифта при наведении*/
+    cursor: pointer;
+}
+
+/**MEDIA**/
+@media (min-width: 550px) {
+    .iw-modal-wrapper2 {
+        max-width: 700px;
+    }
+}
+.gera{
+    /* background: linear-gradient(60deg, #66bb6a, #43a047) !important;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4) !important; */
+    color: white !important;
+}
+.w{
+    background: white !important;
+}
+.mrt10{
+    margin-top: 10px !important;
+}
+.mrb10{
+    margin-bottom: 10px !important;
+}
+.ml30{
+    margin-right: 30 !important
+}
+.hersa{
+    font-size: 1.125rem !important;
+    line-height: 1.4em !important;
+    font-weight: 300 !important;
+}
+.nomag{
+    margin: 0 !important;
+}
+.teki{
+    position: relative;
+    margin-top:210px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    
+}
+.antmarg{
+        margin: 0px 0 -20px !important;
+}
+.margans{
+  margin: -20px 15% 0 15% !important;
+  width:70% !important;
+
+}
+.nova-m{
+    margin: 0 15%;
+}
+.nova-m-item{
+    float: left;
+    margin-left: 15px;
+    max-width: 140px !important;
+}
+.mb-50{
+    margin-bottom:50px !important;
+}
+.margans-bth{
+      margin: 0px 5% 10px 5% !important;
+  width:90% !important;
+}
+.textl{
+    text-align: left !important;
+}
+.textr{
+    float: right !important;
+}
+.textlf{
+    float: left !important;
+}
+.center-top{
+    margin-top: 100px !important;
+}
+.riga{
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+.morgaet{
+    margin: 10px auto !important;
+    width: auto !important;
+    float: none;
+}
+.prima-text{
+    color: #9c27b0 !important;
+}
+.waral{
+    width: 100%;
+}
+.nomar{
+    margin:0px 0px !important;
+}
+.nomar-bot{
+    margin-bottom: 0px !important;
+}
+.pl-15{
+    margin-left: 15px !important;
+}
+.pr-15{
+    margin-right: 15px !important;
+}
+.mt-200{
+    margin-top: 200px !important;
+}
+.mt-150{
+    margin-top: 10rem !important;
+}
+.ca-danger{
+            background:linear-gradient(180deg, #f5eded9e,#f1d3d39e, #f1423e6b) !important;
+}
+.ca-success{
+            background: linear-gradient(180deg, #e1efe726,#37e28026, #32943787) !important;
+}
+.primetxt{
+    color: #9c27b0 !important;
+}
+.white-txt{
+    color: #ffffff !important;
+}
+.pad-15{
+    padding: 5px;
+    font-weight: 900;
+    font-size: 30px;
+}
+.gg{
+    margin:  15px 0;
+}
+.circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  line-height: auto;
+  text-align: center;
+  background: white;
+}
+.m-10{
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+}
+
+.circle_bg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: auto;
+    text-align: center;
+    /* color: #43a047 !important;
+    background: white; */
+  }
+
+.hobot{
+    width: 100%;
+    height: auto;
+}
+.hobot1{
+    width: 50%;
+    height: auto;
+}
+@media screen and (min-width: 900px) { 
+    .hobot{
+        width: 100%;
+        height: auto;
+    }
+    .gg{
+        margin:  15px 10px;
+    }
+}
+@media screen and (max-width: 900px) { 
+    .nomar{
+        /* font-size: 18px !important; */
+    }
+    .scr-mob{
+        display: none;
+    }
+    .skriv_on_phone{
+        display: none;
+    }
+}
+li{
+    list-style-type: none; /* Убираем маркеры */
+}
+.nomar{
+    margin: 10px 0 !important;
+}
+ul{
+    padding-inline-start: 0px !important;
+}
+.margaet{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mb-no{
+    margin-bottom: 0 !important;
+}
+.m-bok-10{
+    padding-left: 3px;
+}
+.pd-no{
+    padding: 0 !important;
+}
+.m-no{
+    margin: 0 !important;
+}
+.num_check{
+    margin-right: 10px;
+}
+.custom-select {
+    display: inline-block;
+    width: 100%;
+    height: calc(2.4375rem + 2px);
+    padding: 0px 0px 0px 1px !important;
+    line-height: 1.5;
+    color: #AAAAAA;
+    vertical-align: middle;
+    background: #ffffff ;
+    background-size: 8px 10px;
+
+    border-bottom: 1px solid #d2d2d2;
+    border-top: #fff;
+    border-left: #fff ;
+    border-right: #fff ;
+
+    border-radius: 0.25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.custom-select:active {
+    border-bottom: 1px solid #9c27b0;
+}
+.form-control {
+    color: #AAAAAA;
+}
+.l-sid{
+    float: right;
+}
+.mg-bt-au{
+    padding: 25% 0;
+}
+.mb-25{
+    margin-bottom:25px;
+}
+.chart_vert{
+    height: 400px;
+}
+@media screen and (max-width: 900px) { 
+    .chart_vert{
+        height: 300px;
+    }
+}
+.no-marg{
+    margin: 0 !important;
+}
+.mrt30{
+    margin-top: 30px !important;
+}
+.tx_min{
+    font-size: 2vh !important;
+    margin: 5px 0 !important;
+}
+.mt-10{
+    margin-top:10px !important;
+}
+.main-panel::before {
+    content: ""; 
+    background-image: url('../img/under_fon.png');
+    background-size: 100% 400px; 
+    width: 100%; 
+    height: 400px; 
+    background-repeat: no-repeat; 
+    /* margin-left: 200px; 
+    margin-top: 100px;  */
+    position: absolute;
+   }
+.vi-no{
+    display: none !important;
+}
+.img_avatar_modal{
+    width: 100%;
+    height: auto;
+}
+.font_top{
+    /* position: absolute;
+    width: 87px;
+    height: 92px;
+    left: 273px;
+    top: 92px; */
+
+    font-family: Exo 2;
+    /* font-style: italic; */
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 60px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.txt_center{
+    text-align:  center;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mt-22{
+    margin-top: 22px;
+}
+.mb-22{
+    margin-bottom: 22px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.mb-75{
+    margin-bottom: 50px;
+}
+.mt-100{
+    margin-top: 100px;
+}
