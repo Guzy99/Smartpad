@@ -1,0 +1,2 @@
+# Smartpad
+Project po modulyu
